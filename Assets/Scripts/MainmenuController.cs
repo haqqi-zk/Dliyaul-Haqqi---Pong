@@ -14,4 +14,16 @@ public class MainmenuController : MonoBehaviour
     {
         Debug.Log("Created by HQ");
     }
+    public void Credit()
+    {
+        SceneManager.LoadScene("Credit");
+    }
+    public void Back()
+    {
+        SceneManager.LoadScene("Main Menu");
+    }
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
 }

@@ -8,6 +8,7 @@ public class HiveController : MonoBehaviour
     public float magnitude;
     public PowerUpController manager;
     public float countdown;
+    
 
     private void OnTriggerEnter2D(Collider2D collission)
     {
@@ -28,6 +29,5 @@ public class HiveController : MonoBehaviour
         {
             manager.RemovePowerUp(gameObject);
         }
-        Debug.Log(countdown);
     }
 }

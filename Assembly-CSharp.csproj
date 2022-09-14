@@ -57,13 +57,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\GoalController.cs" />
+    <Compile Include="Assets\Scripts\GreenPowerController.cs" />
     <Compile Include="Assets\Scripts\BallController.cs" />
     <Compile Include="Assets\Scripts\ScoreController.cs" />
+    <Compile Include="Assets\Scripts\BackButton.cs" />
     <Compile Include="Assets\Scripts\PaddleController.cs" />
     <Compile Include="Assets\Scripts\PowerUpController.cs" />
     <Compile Include="Assets\Scripts\HiveController.cs" />
+    <Compile Include="Assets\Scripts\FunctionTimer.cs" />
     <Compile Include="Assets\Scripts\Manager.cs" />
     <Compile Include="Assets\Scripts\MainmenuController.cs" />
+    <Compile Include="Assets\Scripts\RedPowerController.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

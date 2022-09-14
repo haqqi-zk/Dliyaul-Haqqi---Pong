@@ -7,6 +7,7 @@ public class BallController : MonoBehaviour
     public Vector2 speed;
     public Vector2 resetPosition;
     private Rigidbody2D rig;
+    public float maxSpeed;
 
     private void Start()
     {
@@ -22,5 +23,9 @@ public class BallController : MonoBehaviour
     public void IncreaseSpeed(float magnitude)
     {
         rig.velocity *= magnitude;
+        if (rig.velocity.magnitude > maxSpeed)
+        {
+            rig.velocity = Vector2.ClampMagnitude(rig.velocity, maxSpeed);
+        }
     }
 }
